@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Shade&family=Cedarville+Cursive&family=Lumanosimo&family=Pacifico&family=Tilt+Prism&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.theSiren{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Shade', cursive;
+    color: rgb(221, 83, 106);
+
+
+}
+
+
+
+.link{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.link a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+.active{
+    /* color:#29335C ; */
+    color: rgb(221, 83, 106);
+}
+
+
+.the{
+    font-size: medium;
+    text-orientation:initial;
+    writing-mode:vertical-rl;
+}
+
+/* =======================================Top 3 Image================================ */
+
+.mainBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+
+
+}
+
+.FirstChild img{
+    border-radius: 10px;
+    height: 500px;
+    width: 900px;
+}
+
+.SecondChild{
+    gap: 20px;
+}
+
+.SecondChildOne img{
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
+}
+
+.SecondChildTwo img{
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* =================================LATEST BOX====================================== */
+
+
+.theLatest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    min-height: 400px;
+    text-align: start;
+    gap: 25px;
+
+
+}
+
+.latestBox{
+width: 340px;   
+
+}
+
+.latestHeading{
+    text-align: start;
+    margin-left: 70px;
+    border-bottom: 3px solid tomato;
+    width: max-content;
+
+}
+
+/* ================================TOP STORIES========================== */
+
+.topStoriesParent{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 90px; */
+}
+
+.topstory{
+    text-align: start;
+    border-bottom: 3px solid tomato;
+    width: max-content;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.topStoryData{
+    display: flex;
+    height: 300px;
+    width: 550px;
+    text-align: start;
+    gap: 10px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.topStoryData img{
+    height: 250px;
+    width: 200px;
+}
+
+
+
+.topStoryData-down{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* text-wrap: wrap; */
+}
+
+
+/* ==========================TOP POST====================================== */
+.topPost{
+    border-bottom: 3px solid tomato;
+    width: max-content;
+    margin-left: 20px;
+}
+
+.topPostData{
+    display: flex;
+    width: 700px;
+    padding: 20px;
+    text-align: start;
+    gap: 20px;
+
+}
+
+.p{
+    text-align: end;
+    font-size: xx-large;
+    font-weight: bold;
+    color: gray;
+}
+
+.add{
+    width: 500px;
+    height: 67%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====================================FOOTER================================== */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    bottom: 0;
+    /* border-radius: 20px; */
+    /* height: 250px; */
+    /* width: 100%; */
+    /* background-color: rgb(2, 199, 249); */
+    background-image: url(https://images.hdqwalls.com/wallpapers/mountains-landscape-night-snow-5k-p6.jpg);
+    background-position:bottom;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.fbox1{
+    height: 250px;
+    width: 300px;
+    /* border: 2px solid black; */
+    font-size: large;
+    text-align: center;
+}
+
+.fbox1 a {
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.fbox1 p{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.fbox2{
+    height: 250px;
+    width: 300px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.fbox2 p{
+    padding: 15px;
+
+}
+
+
+.fbox3{
+    height: 250px;
+    width: 300px;
+    /* border: 2px solid black; */
+}
+
+.fbox3 p{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.fbox4{
+  height: 350px;
+  width: 500px;
+}
+
+
+.flink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+}
+
+.flink a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.topstory Navlink{
+    text-decoration: none;
+}
+
+.parentTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.leftDetail{
+    height: 50%;
+    width: 200px;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    /* border: 2px solid black; */
+}
+
+.detail p{
+    /* font-size: x-large; */
+}
+
+.rightDetail{
+    height: 50%;
+    width: 200px;
+    /* border: 2px solid black; */
+
+}
+
+.detailHeadLike{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logoDetailOne{
+    color: rgb(218, 87, 109);
+    cursor: pointer;
+}
+
+.logoDetailTwo{
+    cursor: pointer;
+}
+
+.latestBoxDetail{
+    display: flex;
+}
+
+.latestBoxDetail a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width:480px){
+
+    .mainBox{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .FirstChild img{
+        width: 340px;
+        height: 300px;
+    }
+
+    .SecondChild{
+    }
+
+    .SecondChildOne img{
+        padding-top: 20px;
+        width: 340px;
+        height: 300px;
+
+    }
+
+    .SecondChildTwo img{
+        padding-top: 20px;
+        width: 340px;
+        height: 300px;
+
+    }
+
+    .latestHeading{
+        margin-left: 20px;
+    }
+   
+    .theLatest{
+        padding: 20px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .topstory{
+        margin-left: 20px;
+    }
+
+    .topStoryData{
+        margin-left: 10px;
+        height: 400px;
+        width: 340px;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 2px solid black; */
+    }
+
+    .topStoryData img{
+        width: 340px;
+    }
+
+    .topStoriesParent{
+        flex-direction: column;
+    }
+    
+    .topStoryData-down{
+        gap: 0px;
+    }
+   
+
+    .topPostData{
+        width: 340px;
+        flex-direction: column;
+
+    }
+
+    .topPostData img{
+        width: 340px;
+    }
+
+    .add{
+        height: 600px;
+        width: 330px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .footer{
+        width: 330px;
+        padding-top: 20px;
+        margin-left: 20px;
+
+    }
+
+    .fbox4{
+        width: 340px;
+    }
+}
