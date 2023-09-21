@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width:480px){
+  /* .App{
+    width: 340px;
+  }
+
+  #root{
+    width: 340px;
+  } */
+}

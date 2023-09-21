@@ -342,16 +342,26 @@ width: 340px;
 
 @media (max-width:480px){
 
-   
+    .App{
+        width: 340px;
+      }
+    
+      #root{
+        width: 340px;
+      }
 
     .mainBox{
         flex-direction: column;
         gap: 20px;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
     .FirstChild img{
-        width: 340px;
-        height: 300px;
+        width: 310px;
+        height: 330px;
     }
 
     .SecondChild{
@@ -359,20 +369,21 @@ width: 340px;
 
     .SecondChildOne img{
         padding-top: 20px;
-        width: 340px;
+        width: 330px;
         height: 300px;
 
     }
 
     .SecondChildTwo img{
         padding-top: 20px;
-        width: 340px;
+        width: 330px;
         height: 300px;
 
     }
 
     .latestHeading{
         margin-left: 20px;
+        width: 300px;
     }
    
     .theLatest{
@@ -380,17 +391,25 @@ width: 340px;
         flex-direction: column;
         /* flex-wrap: wrap; */
     }
+
+    .latestBox img{
+        width: 310px;
+    }
+
+    .latestBox p{
+        width: 320px;
+    }
     .topStoriesParent{
         width: 340px;
     }
 
     .topstory{
         margin-left: 20px;
-        width: 340px;
+        width: 300px;
     }
 
     .topStoryData{
-        margin-left: 10px;
+        margin-left: 5px;
         height: 400px;
         width: 340px;
         padding: 10px;
@@ -400,11 +419,11 @@ width: 340px;
     }
 
     .topStoryData img{
-        width: 340px;
+        width: 310px;
     }
 
     .topStoryData p{
-        width: 340px;
+        width: 320px;
     }
 
     .topStoriesParent{
@@ -424,18 +443,22 @@ width: 340px;
     }
 
     .topPostData img{
-        width: 340px;
+        width: 310px;
+    }
+
+    .topPostData p{
+        width: 320px;
     }
 
     .add{
         height: 600px;
-        width: 330px;
+        width: 310px;
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
     .footer{
-        width: 340px;
+        width: 310px;
         padding-top: 20px;
         margin-left: 20px;
 
@@ -466,6 +489,6 @@ width: 340px;
     }
 
     .detail img{
-        width: 340px;
+        width: 310px;
     }
 }
