@@ -424,13 +424,37 @@ width: 340px;
     }
 
     .footer{
-        width: 330px;
+        width: 340px;
         padding-top: 20px;
         margin-left: 20px;
 
     }
 
     .fbox4{
+        width: 340px;
+    }
+
+    .parentTop{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+        margin-left: 20px;
+    }
+
+
+    .latestBoxDetail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail{
+        width: 340px;
+        
+    }
+
+    .detail img{
         width: 340px;
     }
 }

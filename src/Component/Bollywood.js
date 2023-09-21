@@ -16,8 +16,9 @@ const Bollywood = () => {
     {contextData.filter((item)=> item.id >=5 && item.id<=7).map((item,index)=>{
         return(
             <div key={index} className='latestBox'>
-                <img src={item.image} alt='NOT FOUND'width='340px' height='200px' />
-            <NavLink/>
+                <NavLink  to={`/detail/${item.id}`}>
+                    <img src={item.image} alt='NOT FOUND'width='340px' height='200px' />
+                    </NavLink>
                 <h2>{item.name}</h2>
                 <p>{item.textt}</p>
             </div>
@@ -54,7 +55,9 @@ const Bollywood = () => {
             return(
                 <div key={index} className='topPostData'>
                     <div>
+                    <NavLink  to={`/detail/${item.id}`}>
                         <img src={item.image} alt='NOT FOUND' height='200px' width='200px'/>
+                    </NavLink>
                     </div>
 
                     <div>

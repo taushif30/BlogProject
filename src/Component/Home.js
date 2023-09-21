@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react'
-import { Store } from './ContextStore'
+import { Store } from './ContextStore';
+import { NavLink } from 'react-router-dom';
+
 
 const Home = ({value}) => {
     const [homeData] = useContext(Store);
@@ -38,7 +40,9 @@ const Home = ({value}) => {
         {homeData.filter((item)=> item.latest === 'latest').map((item,index)=>{
             return(
                 <div key={index} className='latestBox'>
+                    <NavLink  to={`/detail/${item.id}`}>
                     <img src={item.image} alt='NOT FOUND'width='340px' height='200px' />
+                    </NavLink>
                     <h2>{item.name}</h2>
                     <p>{item.textt}</p>
                 </div>
@@ -54,9 +58,11 @@ const Home = ({value}) => {
         {homeData.filter((item)=> item.id%6 === 0).map((item,index)=>{
             return(
                 <div key={index} className='topStoryData'>
+                     <NavLink  to={`/detail/${item.id}`}>
                     <div>
                         <img src={item.image} alt='NOT FOUND' />
                     </div>
+                </NavLink>
                     <div className='topStoryData-down'>
                     <h4>{item.name}</h4>
                     <p>{item.textt}</p><hr/>
@@ -73,7 +79,9 @@ const Home = ({value}) => {
             return(
                 <div key={index} className='topPostData'>
                     <div>
+                    <NavLink  to={`/detail/${item.id}`}>
                         <img src={item.image} alt='NOT FOUND' height='200px' width='200px'/>
+                    </NavLink>
                     </div>
 
                     <div>

@@ -16,7 +16,9 @@ const Sports = () => {
     {contextData.filter((item)=> item.id >=45 && item.id<=47).map((item,index)=>{
         return(
             <div key={index} className='latestBox'>
-                <img src={item.image} alt='NOT FOUND'width='340px' height='200px' />
+                 <NavLink  to={`/detail/${item.id}`}>
+                    <img src={item.image} alt='NOT FOUND'width='340px' height='200px' />
+                    </NavLink>
                 <h2>{item.name}</h2>
                 <p>{item.textt}</p>
             </div>
@@ -53,7 +55,9 @@ const Sports = () => {
             return(
                 <div key={index} className='topPostData'>
                     <div>
+                    <NavLink  to={`/detail/${item.id}`}>
                         <img src={item.image} alt='NOT FOUND' height='200px' width='200px'/>
+                    </NavLink>
                     </div>
 
                     <div>
