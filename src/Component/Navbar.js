@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../Component/Style.css'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import Home from './Home'
@@ -11,6 +11,10 @@ import ContextStore from './ContextStore'
 import Detail from './Detail'
 
 const Navbar = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
   return (
     <>
     <div className='theSiren'>

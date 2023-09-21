@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Store } from './ContextStore';
 import { NavLink } from 'react-router-dom';
@@ -7,8 +7,15 @@ import { NavLink } from 'react-router-dom';
 const Detail = () => {
   const id = useParams().id;
   const [dataContext] = useContext(Store);
-  const dRouteData = dataContext[id].cat;
+  // const category = dataContext[parseInt (id)-1].cat
+  const dRouteData = dataContext[parseInt (id)-1].cat;
+  const random = Math.floor(Math.random()*7)
   console.log(typeof id);
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
+
   return (
     <>
     {dataContext.filter((data) => data.id === parseInt(id)).map((item,index)=>{
@@ -67,7 +74,7 @@ const Detail = () => {
     
     </div>
 
-   </div><br/> */}
+   </div><br/>  */}
 
 
       </>
@@ -77,16 +84,24 @@ const Detail = () => {
 
    
 
-{dataContext.filter((data) => (data.cat === dRouteData) && (data.id % 5 === 1 || data.id % 3 === 2 || data.id % 3 === 0)  ).map((item,index)=>{
+{/* {{dataContext.filter((data) => (data.cat === dRouteData) && (data.id % 13 === 1 || data.id % 14 === 2 || data.id % 15 === 0)  ).map((item,index)=>{ */}
+<div className='latestBoxDetail'>
+{dataContext.filter((data)=> data.cat === dRouteData && data.id !== parseInt(id))
+.slice(random,random+3)
+.map((item,index)=>{
   return(
-    <>
+    <div className='DetailBox'>
      <NavLink to={`/detail/${item.id}`}>
-    <h1>{item.cat}</h1>
+      <div key={index} className='b'>
+      <h2>{item.name}</h2>
     <img src={item.image} alt='NOT FOUND'/>
+    <p>{item.textt}</p>
+    </div>
     </NavLink>
-    </>
+    </div>
   )
 })} 
+</div>
     
     </>
   )

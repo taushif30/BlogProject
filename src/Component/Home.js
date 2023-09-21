@@ -1,8 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Store } from './ContextStore'
 
 const Home = ({value}) => {
-    const [homeData] = useContext(Store)
+    const [homeData] = useContext(Store);
+    useEffect(()=>{
+        window.scrollTo(0,0);
+      })
     
 
   return (

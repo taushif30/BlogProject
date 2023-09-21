@@ -245,7 +245,7 @@ width: 340px;
 }
 
 .fbox4{
-  height: 350px;
+  height: 250px;
   width: 500px;
 }
 
@@ -322,12 +322,22 @@ width: 340px;
 
 .latestBoxDetail{
     display: flex;
+    justify-content: space-around;
 }
 
 .latestBoxDetail a{
     margin-top: 20px;
     text-decoration: none;
     color: black;
+}
+
+.b img{
+    width: 340px;
+    height: 250px;
+}
+
+.DetailBox{
+    width: 340px;
 }
 
 @media (max-width:480px){

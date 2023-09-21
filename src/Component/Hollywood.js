@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Store } from './ContextStore';
 import { NavLink } from 'react-router-dom';
 
 
 const Hollywood = () => {
-  const [contextData] = useContext(Store)
+  const [contextData] = useContext(Store);
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
   return (
     <>
     <h1 className='latestHeading'>THE LATEST</h1>
