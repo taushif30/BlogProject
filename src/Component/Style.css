@@ -342,6 +342,8 @@ width: 340px;
 
 @media (max-width:480px){
 
+   
+
     .mainBox{
         flex-direction: column;
         gap: 20px;
@@ -378,9 +380,13 @@ width: 340px;
         flex-direction: column;
         /* flex-wrap: wrap; */
     }
+    .topStoriesParent{
+        width: 340px;
+    }
 
     .topstory{
         margin-left: 20px;
+        width: 340px;
     }
 
     .topStoryData{
@@ -397,12 +403,17 @@ width: 340px;
         width: 340px;
     }
 
+    .topStoryData p{
+        width: 340px;
+    }
+
     .topStoriesParent{
         flex-direction: column;
     }
     
     .topStoryData-down{
         gap: 0px;
+        width: 340px;
     }
    
 
