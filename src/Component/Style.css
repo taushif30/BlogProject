@@ -60,6 +60,8 @@
     border-radius: 10px;
     height: 500px;
     width: 900px;
+    background-position: center;
+    background-size: cover;
 }
 
 .SecondChild{
@@ -340,6 +342,45 @@ width: 340px;
     width: 340px;
 }
 
+@media(min-width:520px) and (max-width:1024px){
+
+
+    .mainBox{
+        flex-direction: column;
+    }
+
+    .topStoriesParent{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .latestHeading{
+        margin: 20px 0px 20px 80px;
+    }
+
+    .theLatest{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add{
+        justify-content: center;
+        align-items: center;
+        height: 750px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    
+    
+}
+
 
 
 @media (max-width:500px){
@@ -456,6 +497,18 @@ width: 340px;
     .rightDetail{
         display: none;
     }
+
+    .detailHeadLike{
+        justify-content: center;
+    }
+
+    .b{
+        gap: 40px;
+    }
+
+    /* .logoDetailOne h1{
+        margin-left: 40px;
+    } */
 
 }
 
