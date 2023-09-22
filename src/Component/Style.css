@@ -349,10 +349,18 @@ width: 340px;
         flex-direction: column;
     }
 
+    .latestBox{
+        width: 650px;
+    }
+
     .topStoriesParent{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .topStoryData{
+        width: 650px;
     }
 
     .latestHeading{
