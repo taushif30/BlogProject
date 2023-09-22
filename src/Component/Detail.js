@@ -42,6 +42,7 @@ const Detail = () => {
       </div>
 
       </div>
+      
       <img src={item.image} alt='NOT FOUND' height='450px' width='550px'/><br/>
       <p>{item.text}</p>
       <p>{item.text}</p>

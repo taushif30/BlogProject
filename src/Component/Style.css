@@ -340,10 +340,133 @@ width: 340px;
     width: 340px;
 }
 
-@media (max-width:480px){
 
+
+@media (max-width:500px){
+
+
+    .mainBox{
+        flex-direction: column;
+        width: 340px;
+        flex-wrap: wrap;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FirstChild img{
+        width: 340px;
+        height:400px;
+    }
+
+    .SecondChildOne img{
+        height: 350px;
+        width: 330px;
+    }
+
+    .SecondChildTwo img{
+        height: 350px;
+        width: 330px;
+    }
+
+    .theLatest{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .latestHeading{
+        margin-left: 5px;
+        margin: 10px 0px 20px 0px;
+    }
+
+    .topStoriesParent{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .topstory{
+        margin-left: 5px;
+    }
+
+    .topStoryData{
+        width: 340px;
+        margin-left: 5px;
+        flex-direction: column;
+        height: 450px;
+        gap: 0px;
+        padding-top: 5px;
+    }
+
+    /* .topPostData img{
+        width:320px;
+    } */
+
+    .topPost{
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .topPostData{
+        width: 340px;
+        height: 350px;
+        gap: 5px;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .topStoryData img{
+        width: 330px;
+    }
+
+    .topPostData img{
+        width: 330px;
+    }
+
+    .add{
+        width: 340px;
+        height: 650px;
+    }
+
+    .latestBoxDetail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        margin-top: 20px;
+    }
+
+    .detail img{
+        width: 330px;
+    }
+
+    .detail{
+        width: 340px;
+        
+    }
+
+    .detail img{
+        width: 310px;
+    } 
+
+    .leftDetail{
+        display: none;
+    }
+    
+
+    .rightDetail{
+        display: none;
+    }
+
+}
+
+
+
+/* 
+@media (max-width:480px){
+ 
     .App{
         width: 340px;
+        overflow-x: hidden;
       }
     
       #root{
@@ -355,9 +478,7 @@ width: 340px;
         gap: 20px;
     }
 
-    body{
-        overflow-x: hidden;
-    }
+    
 
     .FirstChild img{
         width: 310px;
@@ -369,27 +490,26 @@ width: 340px;
 
     .SecondChildOne img{
         padding-top: 20px;
-        width: 330px;
+        width: 310px;
         height: 300px;
 
     }
 
     .SecondChildTwo img{
         padding-top: 20px;
-        width: 330px;
+        width: 310px;
         height: 300px;
 
     }
 
     .latestHeading{
         margin-left: 20px;
-        width: 300px;
+        width: 280px;
     }
    
     .theLatest{
         padding: 20px;
         flex-direction: column;
-        /* flex-wrap: wrap; */
     }
 
     .latestBox img{
@@ -397,6 +517,10 @@ width: 340px;
     }
 
     .latestBox p{
+        width: 320px;
+    }
+
+    .latestBox{
         width: 320px;
     }
     .topStoriesParent{
@@ -415,7 +539,6 @@ width: 340px;
         padding: 10px;
         flex-direction: column;
         justify-content: center;
-        /* border: 2px solid black; */
     }
 
     .topStoryData img{
@@ -490,5 +613,5 @@ width: 340px;
 
     .detail img{
         width: 310px;
-    }
-}
+    } 
+} */
