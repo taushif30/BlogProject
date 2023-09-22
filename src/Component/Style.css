@@ -17,6 +17,10 @@
 
 }
 
+.hamburger{
+    display: none;
+}
+
 
 
 .link{
@@ -346,12 +350,15 @@ width: 340px;
     width: 340px;
 }
 
+
 @media(min-width:520px) and (max-width:1024px){
 
 
     .mainBox{
         flex-direction: column;
     }
+
+   
 
     
 
@@ -432,6 +439,39 @@ width: 340px;
 
 
 @media (max-width:500px){
+    
+.navTop{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+    .link{
+        display: none;
+        
+    }
+
+    .navTop a{
+        text-decoration: none;
+        color: black;
+    }
+    .active a{
+        /* color:#29335C ; */
+        color: rgb(221, 83, 106);
+    }
+
+
+
+    .hamburger{
+        display: block;
+        margin-left: 8rem;
+        
+    }
+
+    .theSiren{
+        justify-content: flex-start;
+    }
+
 
 
     .mainBox{

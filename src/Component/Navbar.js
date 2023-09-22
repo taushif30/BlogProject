@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { Squash as Hamburger } from 'hamburger-react'
 import '../Component/Style.css'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import Home from './Home'
@@ -15,14 +16,25 @@ const Navbar = () => {
   useEffect(()=>{
     window.scrollTo(0,0);
   })
+
+  const [menu,setMenu] = useState(false)
+  console.log(menu)
   return (
     <>
     <div className='theSiren'>
+      
         <h1><span className='the'>The</span></h1>
         <h1>Siren</h1>
+        
+
+        <div className='hamburger' onClick={()=>setMenu(!menu)}>
+          <Hamburger />
+        </div>
     </div>
 
-    <div className='link'>
+    
+
+    <div className={menu ? 'navTop' : 'link'}   >
         <NavLink to={'/'}>Home</NavLink>
         <NavLink to={'/bollywood'}>Bollywood</NavLink>
         <NavLink to={'/hollywood'}>Hollywood</NavLink>

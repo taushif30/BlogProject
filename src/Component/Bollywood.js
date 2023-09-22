@@ -4,10 +4,12 @@ import { NavLink } from 'react-router-dom';
 
 
 const Bollywood = () => {
-    const [contextData] = useContext(Store);
     useEffect(()=>{
         window.scrollTo(0,0);
       })
+      
+    const [contextData] = useContext(Store);
+   
   return (
     <>
     <h1 className='latestHeading'>THE LATEST</h1>
