@@ -83,6 +83,10 @@ const Navbar = () => {
         <h2>About Us</h2><br/>
         <p>Whether sharing your expertise, breaking news, or whatever’s on your mind, you’re in good company on Blogger. Sign up to discover why millions of people have published their passions here.</p>
          <br/>
+
+      </div>
+
+      <div className='fbox5'>
          <p>Copyright are subjected to @Taushifsidd@gmail.com</p>
 
       </div>

@@ -203,8 +203,8 @@ width: 340px;
 }
 
 .fbox1{
-    height: 250px;
-    width: 300px;
+    /* height: 250px; */
+    width: 250px;
     /* border: 2px solid black; */
     font-size: large;
     text-align: center;
@@ -223,8 +223,8 @@ width: 340px;
 
 
 .fbox2{
-    height: 250px;
-    width: 300px;
+    /* height: 250px; */
+    width: 250px;
     /* border: 2px solid black; */
     text-align: center;
 }
@@ -235,8 +235,8 @@ width: 340px;
 
 
 .fbox3{
-    height: 250px;
-    width: 300px;
+    /* height: 250px; */
+    width: 250px;
     /* border: 2px solid black; */
 }
 
@@ -247,8 +247,12 @@ width: 340px;
 }
 
 .fbox4{
-  height: 250px;
-  width: 400px;
+  /* height: 250px; */
+  width: 250px;
+}
+.fbox5{
+    justify-content: center;
+    align-items: center;
 }
 
 
