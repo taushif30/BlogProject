@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Squash as Hamburger } from 'hamburger-react'
+// import { Squash as Hamburger } from 'hamburger-react'
 import '../Component/Style.css'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import Home from './Home'
@@ -28,19 +28,21 @@ const Navbar = () => {
         
 
         <div className='hamburger' onClick={()=>setMenu(!menu)}>
-          <Hamburger />
+        <i class="fa-solid fa-bars"></i>
+          {/* <Hamburger /> */}
         </div>
     </div>
 
     
 
     <div className={menu ? 'navTop' : 'link'}   >
-        <NavLink to={'/'}>Home</NavLink>
-        <NavLink to={'/bollywood'}>Bollywood</NavLink>
-        <NavLink to={'/hollywood'}>Hollywood</NavLink>
-        <NavLink to={'/technology'}>Technology</NavLink>
-        <NavLink to={'/sports'}>Sports</NavLink>
-        <NavLink to={'/food'}>Food</NavLink>
+        <NavLink to={'/' } onClick={()=>setMenu(!menu)}>Home</NavLink>
+        <NavLink to={'/bollywood'} onClick={()=>setMenu(!menu)}>Bollywood</NavLink>
+        <NavLink to={'/hollywood'}  onClick={()=>setMenu(!menu)}>Hollywood</NavLink>
+        <NavLink to={'/technology'}  onClick={()=>setMenu(!menu)}>Technology</NavLink>
+        <NavLink to={'/sports'}  onClick={()=>setMenu(!menu)}>Sports</NavLink>
+        <NavLink to={'/food'}  onClick={()=>setMenu(!menu)}>Food</NavLink>
+
     </div>
 
     
