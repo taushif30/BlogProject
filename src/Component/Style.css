@@ -619,6 +619,12 @@ width: 340px;
         gap: 40px;
     }
 
+    .footer{
+        justify-content: center;
+        align-items: center;
+        width: 340px;
+    }
+
     /* .logoDetailOne h1{
         margin-left: 40px;
     } */
