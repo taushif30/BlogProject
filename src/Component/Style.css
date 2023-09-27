@@ -31,8 +31,22 @@
     flex-wrap: wrap;
 }
 
+.navTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 .link a{
+    text-decoration: none;
+    font-size: larger;
+    padding: 10px;
+}
+
+.navTop a{
     text-decoration: none;
     font-size: larger;
     padding: 10px;
@@ -383,6 +397,14 @@ width: 340px;
         width: 650px;
     }
 
+    .latestBoxDetail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        margin-top: 20px;
+    }
+
     .topStoriesParent{
         flex-direction: column;
         justify-content: center;
@@ -430,8 +452,11 @@ width: 340px;
         width: 650px;
     }
 
-
-
+    .fbox5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     
 }

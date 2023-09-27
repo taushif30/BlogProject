@@ -35,13 +35,13 @@ const Navbar = () => {
 
     
 
-    <div className={menu ? 'navTop' : 'link'}   >
-        <NavLink to={'/' } onClick={()=>setMenu(!menu)}>Home</NavLink>
-        <NavLink to={'/bollywood'} onClick={()=>setMenu(!menu)}>Bollywood</NavLink>
-        <NavLink to={'/hollywood'}  onClick={()=>setMenu(!menu)}>Hollywood</NavLink>
-        <NavLink to={'/technology'}  onClick={()=>setMenu(!menu)}>Technology</NavLink>
-        <NavLink to={'/sports'}  onClick={()=>setMenu(!menu)}>Sports</NavLink>
-        <NavLink to={'/food'}  onClick={()=>setMenu(!menu)}>Food</NavLink>
+    <div className={menu ? 'navTop' : 'link'} onClick={()=>setMenu(!menu)}   >
+        <NavLink to={'/' } >Home</NavLink>
+        <NavLink to={'/bollywood'} >Bollywood</NavLink>
+        <NavLink to={'/hollywood'}  >Hollywood</NavLink>
+        <NavLink to={'/technology'}  >Technology</NavLink>
+        <NavLink to={'/sports'}  >Sports</NavLink>
+        <NavLink to={'/food'}  >Food</NavLink>
 
     </div>
 
