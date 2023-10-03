@@ -317,9 +317,7 @@ width: 340px;
     /* border: 2px solid black; */
 }
 
-.detail p{
-    /* font-size: x-large; */
-}
+
 
 .rightDetail{
     height: 50%;
@@ -457,6 +455,14 @@ width: 340px;
         justify-content: center;
         align-items: center;
     }
+
+    .DetailBox{
+        width: 650px;
+    }
+
+    .DetailBox img{
+        width: 650px;
+    }
     
     
 }
@@ -524,9 +530,16 @@ width: 340px;
     }
 
     .theLatest{
+        display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .latestBox{
+        padding-left: 20px;
+    }
+
+   
 
     .latestHeading{
         margin-left: 5px;
@@ -544,7 +557,7 @@ width: 340px;
 
     .topStoryData{
         width: 340px;
-        margin-left: 5px;
+        margin-left: 20px;
         flex-direction: column;
         height: 450px;
         gap: 0px;
@@ -556,7 +569,7 @@ width: 340px;
     } */
 
     .topPost{
-        margin-top: 20px;
+        margin-top: 40px;
         margin-left: 5px;
     }
 
@@ -566,6 +579,7 @@ width: 340px;
         gap: 5px;
         padding: 5px;
         flex-direction: column;
+        padding-left: 20px;
     }
 
     .topStoryData img{
@@ -577,8 +591,10 @@ width: 340px;
     }
 
     .add{
+        margin-top: 70px;
         width: 340px;
         height: 650px;
+        margin-left: 20px;
     }
 
     .latestBoxDetail{
@@ -620,9 +636,10 @@ width: 340px;
     }
 
     .footer{
+        margin: 20px 0px 0px 20px;
         justify-content: center;
         align-items: center;
-        width: 340px;
+        width: 100%;
     }
 
     /* .logoDetailOne h1{
