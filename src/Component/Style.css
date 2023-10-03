@@ -512,6 +512,7 @@ width: 340px;
         padding: 0px;
         justify-content: center;
         align-items: center;
+        padding-left: 20px;
     }
 
     .FirstChild img{
