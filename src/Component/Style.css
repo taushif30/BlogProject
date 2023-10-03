@@ -604,6 +604,7 @@ width: 340px;
         align-items: center;
         text-align: start;
         margin-top: 20px;
+        padding-left: 20px;
     }
 
     .detail img{
@@ -611,6 +612,7 @@ width: 340px;
     }
 
     .detail{
+        padding-left: 20px;
         width: 340px;
         
     }
@@ -642,6 +644,8 @@ width: 340px;
         align-items: center;
         width: 100%;
     }
+
+   
 
     /* .logoDetailOne h1{
         margin-left: 40px;
